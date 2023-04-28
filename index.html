@@ -9,53 +9,43 @@
   <body>
     <h1 id="bert">Hiii</h1>
 
-           bitte schreiben Sie Erstes Nummer:  <input id = "firstNumber" type="number">
+    bitte schreiben Sie Erstes Nummer: <input id="firstInput" type="number" />
 
-           <br>
-           <br>
+    <br />
+    <br />
 
-           bitte schreiben Sie Zwites Nummer: <input id="secondNumber" type="number" >
-            <br>
+    bitte schreiben Sie Zwites Nummer: <input id="secondInput" type="number" />
+    <br />
 
-           <button id="btnAdd" onclick="addTowNumbers()" >add tow numbers</button>
+    <button id="btnAdd" onclick="addFunction()">add tow numbers</button>
 
-           <button id="btnMinus" onclick="minusTowNumber()">minus tow number </button>
-           <button id="btnMultiple" onclick="multiple()">multiple tow number </button>
-           <button id="btnDivide" onclick="devide()">divide tow number </button>
-
+    <button id="btnMinus" onclick="minusFunction()">minus tow number</button>
+    <button id="btnMultiple" onclick="multipleFunction()">
+      multiple tow number
+    </button>
+    <button id="btnDivide" onclick="devideFunction()">divide tow number</button>
   </body>
   <script>
-    const firstNumber = parseFloat( document.getElementById("firstNumber").value);
-    const secondNumber = parseFloat(document.getElementById("secondNumber").value);
+    const firstNumber = parseFloat(document.getElementById("firstInput").value);
+    const secondNumber = parseFloat(
+      document.getElementById("secondInput").value
+    );
 
-    function showHelloWindowAlert(innerTextForHello) {
-      window.alert(innerTextForHello);
-      let result = "my Result";
+    function addFunction() {
+        window.alert(firstNumber + secondNumber);
     }
 
-    function minusTowNumber()
-    {
-        let result = firstNumber-secondNumber;
-        showHelloWindowAlert(result);
+    function minusFunction() {
+        window.alert(firstNumber - secondNumber);
     }
 
-    function multiple()
-    {
-        let result = firstNumber*secondNumber;
-        showHelloWindowAlert(result);
+    function multipleFunction() {
+        window.alert(firstNumber * secondNumber);
     }
 
-    function devide()
-    {
-        let result = firstNumber/secondNumber;
-        showHelloWindowAlert(result);
+    function devideFunction() {
+        window.alert( firstNumber / secondNumber);
     }
 
-
-    function addTowNumbers()
-    {
-        let result = firstNumber+secondNumber;
-        showHelloWindowAlert(result);
-    }
   </script>
 </html>
