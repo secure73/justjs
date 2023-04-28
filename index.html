@@ -20,8 +20,8 @@
            <button id="btnAdd" onclick="addTowNumbers()" >add tow numbers</button>
 
            <button id="btnMinus" onclick="minusTowNumber()">minus tow number </button>
-           <button id="btnMultiple" onclick="">multiple tow number </button>
-           <button id="btnDivide" onclick="">divide tow number </button>
+           <button id="btnMultiple" onclick="multiple()">multiple tow number </button>
+           <button id="btnDivide" onclick="devide()">divide tow number </button>
 
   </body>
   <script>
@@ -36,6 +36,18 @@
     function minusTowNumber()
     {
         let result = firstNumber-secondNumber;
+        showHelloWindowAlert(result);
+    }
+
+    function multiple()
+    {
+        let result = firstNumber*secondNumber;
+        showHelloWindowAlert(result);
+    }
+
+    function devide()
+    {
+        let result = firstNumber/secondNumber;
         showHelloWindowAlert(result);
     }
 
